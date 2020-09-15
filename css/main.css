@@ -170,6 +170,7 @@ img {
     right: 0;
     font-size: 28px;
     background: #ffbc00;
+    color: #fff;
     border-radius: 50%;
     height: 15px;
     width: 15px;
@@ -191,4 +192,28 @@ img {
       background: #ffbc00;
       transform: scale(1.2); }
       #home-c .process-icon:hover .process-step {
-        background: #333; }
+        background: #333;
+        color: #fff; }
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    align-items: center;
+    height: 5rem; }
+    #main-footer .footer-content .socials .fab {
+      margin-right: 0.5rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem; }
+      #main-footer .footer-content .socials .fab:hover {
+        cursor: pointer;
+        background: #ffbc00; }
