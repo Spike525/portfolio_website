@@ -354,6 +354,43 @@ img {
     border-radius: 50%;
     margin-right: 0.5rem; }
 
+#contact-a .text-form {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 0.6rem; }
+  #contact-a .text-form .input-text {
+    padding: 0.5rem;
+    font-size: 1.0rem; }
+  #contact-a .text-form .input-message {
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column: 1 / span 2;
+    height: 100px;
+    resize: none; }
+
+#contact-a button[type="submit"] {
+  width: 50%;
+  font-size: 1.0rem; }
+
+#contact-b .contact-info {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around; }
+  #contact-b .contact-info a {
+    color: #fff; }
+  #contact-b .contact-info .info-title {
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1; }
+
+#contact-c {
+  background: #ffbc00;
+  padding: 4rem; }
+  #contact-c h1 {
+    font-size: 3rem; }
+
 #main-footer {
   background: #333;
   color: #fff;
@@ -376,3 +413,73 @@ img {
       #main-footer .footer-content .socials .fab:hover {
         cursor: pointer;
         background: #ffbc00; }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 5rem; } }
+
+@media (max-width: 500px), (max-height: 330px) {
+  #main-nav {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    height: 10rem;
+    background-position: 20% 30%;
+    border-bottom: 3px solid #ffbc00; }
+    #header-home .header-content {
+      display: none; }
+  #header-inner {
+    height: 10rem; }
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #work-a .items {
+    grid-template-columns: 1fr; }
+  #home-a .specials {
+    margin-top: 2.5rem; }
+    #home-a .specials div {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #f4f4f4; }
+      #home-a .specials div:last-child {
+        padding-bottom: 0;
+        border: none; }
+  #home-b .stats div {
+    padding: 2rem 0; }
+  #about-a .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+  #about-c {
+    display: none; }
+  #about-d {
+    padding: 2rem 0; }
+  #contact-a .text-form {
+    grid-template-columns: 1fr; }
+    #contact-a .text-form .input-message {
+      grid-column: 1; }
+  #contact-b {
+    padding: 2rem 0; }
+    #contact-b .contact-info {
+      flex-direction: column; }
+      #contact-b .contact-info div {
+        padding-bottom: 2rem; }
+        #contact-b .contact-info div:last-child {
+          padding-bottom: 0; }
+  #contact-c {
+    padding: 2rem 0; }
+    #contact-c h1 {
+      font-size: 2rem; }
+  #main-footer .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    height: 8rem; } }
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 2rem; } }
